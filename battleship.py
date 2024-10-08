@@ -472,7 +472,7 @@ while True:
                 print( "That's the last of them! We've won!" )
                 score += 1
                 break
-            input( "Press Enter to sontinue." )
+            input( "Press Enter to continue." )
             oBarrage( pBoard , ship_list , hit , miss )
             if checkGameOver( ship_list , True ):
                 print( "That's the last of our ships! We've lost!" )
@@ -492,5 +492,7 @@ while True:
             input( "Press Enter to continue." )
     
     confirm = binaryPrompt( "Would you like to play again? Y/N " , "y" , "n" )
+    if confirm:
+        break
 
 print( "Your final score is " + score + ". Thank you for playing!" )
